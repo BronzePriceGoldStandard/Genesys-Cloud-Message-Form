@@ -1,14 +1,5 @@
   /* Used to create the point in which form will live, body of the page */
 document.addEventListener("DOMContentLoaded", function() {
-/*  
-fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
-  .then(response => response.json())
-  .then(files => {
-    files.forEach(file => {
-      console.log('Found file:', file);
-    });
-  });
-*/
   const createDivEl = document.createElement("div");
   createDivEl.id = 'bcc_formDIV';
   document.body.appendChild(createDivEl);
@@ -22,7 +13,7 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
   /* Button used to intitiate the form, body of the page */
   const initialButton = document.createElement('button');
   initialButton.id = 'bcc_openChat';
-  document.getElementById('bcc_formDIV').appendChild(initialButton);
+  document.body.appendChild(initialButton);
 
     /* Adding the form to the page */
   fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
