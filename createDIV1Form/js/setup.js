@@ -29,17 +29,14 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
     .then(response => response.text())
     .then(data => {
        bcc_formDIV.innerHTML = data;
+       const runList = document.createElement('script');
+       runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
+       runList.defer = true; 
+       document.head.appendChild(runList);
     })
     .catch(error => {
        console.error('Error loading file:', error);
   });
-  
-  const runList = document.createElement('script');
-  runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
-  runList.defer = true; 
-  document.head.appendChild(runList);
-  
-
 
   /* It's own stylesheet  */
   const sSheet = document.createElement('link');
