@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
        const runList1 = document.createElement('script');
        runList1.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js';
        runList1.defer = true; 
-       document.getElementById('bcc_formDIV').appendChild(runList1);
+       document.head.appendChild(runList1);
        const runList = document.createElement('script');
        runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
        runList.defer = true; 
-       document.getElementById('bcc_formDIV').appendChild(runList);
+       document.head.appendChild(runList);
     })
     .catch(error => {
        console.error('Error loading file:', error);
