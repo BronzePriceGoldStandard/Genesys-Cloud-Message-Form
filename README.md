@@ -20,7 +20,10 @@ Example:<br>
 <img width="312" alt="image" src="https://github.com/user-attachments/assets/736e8a23-23f2-4049-9975-268eec5ff881" />  <img width="312" alt="image" src="https://github.com/user-attachments/assets/5fc412c4-aa63-41fb-9d82-45d80908c86b" />
 
 
-
+<br>
+<b>Notes:</b> The logo should be stored in, and replace the current logo file. Use same name or you will need to modify the script:<br>
+<code>Genesys-Cloud-Message-Form/createDiv1Form/img/logo.png</code>
+<br><br><br>
 Then it brings back those values from the Participant Data and not from the form inputs directly.
 
  
