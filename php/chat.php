@@ -14,7 +14,7 @@
         </td>
       </tr>
     </table>
-<form id="preChatForm">
+<form id="bcc_preChatForm">
   <input class="inputFields" type="text" id="firstName" placeholder="First Name" required />
   <input class="inputFields" type="text" id="lastName" placeholder="Last Name" required />
   <input class="inputFields" type="email" id="email" placeholder="Email" required />
@@ -24,14 +24,5 @@
 <button id="cancel" class="cancelButton" type="submit">CANCEL</button>
 <br>
 </div>
-<script>
- document.getElementById('cancel').addEventListener('click',function(event){
-  event.preventDefault();
-  document.getElementById('bodyColor').hidden = true;
-  document.getElementById('chat').hidden = true;
-  document.getElementById('openMain').hidden = false;
-  console.log("Executed a cancel of the form window");
- });
-</script>
 </body>
 </html>
