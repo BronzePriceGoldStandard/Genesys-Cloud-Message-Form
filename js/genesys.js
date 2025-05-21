@@ -1,3 +1,7 @@
+ console.log("Created by Bronze Cooley, please contact for information: siteDemo@bronzecooley.com");
+
+document.getElementById("preChatForm").addEventListener("submit", function(e) {
+  e.preventDefault();
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
     g[e] = g[e] || function () {
@@ -5,22 +9,19 @@
     };
     g[e].t = 1 * new Date();
     g[e].c = es;
-    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset                                                                                                                                                              = 'utf-8'; document.head.appendChild(ys);
-  })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.                                                                                                                                                             min.js', {
-    environment: '[REDACTED]',
-    deploymentId: '[REDACTED]'
+    ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+  })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+    environment: 'prod',
+    deploymentId: '677568d8-da32-4ed2-bc6a-8865569a4ed9'
   });
-
-document.getElementById("preChatForm").addEventListener("submit", function(e) {
-  e.preventDefault();
+Genesys('subscribe','Database.Ready',function(){
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
   document.getElementById("preChatForm").hidden = true;
   document.getElementById('formPoint').hidden = true;
   console.log("Complete");
-
-  Genesys('subscribe',"Database.Ready",function(){
+  Genesys('subscribe',"Messenger.Ready",function(){
    console.log("Database is ready!");
    Genesys("command", "Database.set", {
     messaging: {
@@ -42,5 +43,5 @@ document.getElementById("preChatForm").addEventListener("submit", function(e) {
   Genesys('command','Messenger.clear');
   location.reload(true);
  });
-
+});
 });
