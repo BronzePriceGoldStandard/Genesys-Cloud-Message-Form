@@ -29,6 +29,10 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
     .then(response => response.text())
     .then(data => {
        bcc_formDIV.innerHTML = data;
+       const runList1 = document.createElement('script');
+       runList1.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js';
+       runList1.defer = true; 
+       document.getElementById('bcc_formDIV').appendChild(runList1);
        const runList = document.createElement('script');
        runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
        runList.defer = true; 
