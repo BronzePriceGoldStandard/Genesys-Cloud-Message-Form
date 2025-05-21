@@ -33,7 +33,7 @@ fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/list-files.php')
   fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
-       document.getElementById('bcc_formDIV').innerHTML = data;
+       bcc_formDIV.innerHTML = data;
     })
     .catch(error => {
        console.error('Error loading file:', error);
