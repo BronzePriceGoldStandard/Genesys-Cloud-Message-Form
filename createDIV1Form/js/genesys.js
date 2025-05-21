@@ -12,8 +12,8 @@ document.getElementById("bcc_preChatForm").addEventListener("submit", function(e
     g[e].c = es;
     ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
   })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
-    environment: 'prod',
-    deploymentId: '677568d8-da32-4ed2-bc6a-8865569a4ed9'
+    environment: '[REDACTED]',
+    deploymentId: '[REDACTED]'
   });
 Genesys('subscribe','Database.Ready',function(){
   const firstName = document.getElementById("firstName").value;
