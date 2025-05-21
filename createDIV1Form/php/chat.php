@@ -7,7 +7,7 @@
     <table id="headerTable">
       <tr>
         <td>
-          <img id="cLogo" src="img/OrLogo.png"></img>
+          <img id="cLogo" src="Genesys-Cloud-Message-Form-main/createDIV1Form/img/OrLogo.png"></img>
         </td>
         <td>
           <h3 id="chatHeader">YOUR COMPANY NAME</h3>
