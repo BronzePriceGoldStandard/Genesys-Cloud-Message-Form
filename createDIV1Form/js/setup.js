@@ -1,13 +1,13 @@
   /* Used to create the point in which form will live, body of the page */
-  const createDiv = document.createElement('div');
-  createDiv.id = 'bcc_formDIV';
-  document.body.appendChild(createDiv);
+  const createDivEl = document.createElement('div');
+  createDivEl.id = 'bcc_formDIV';
+  document.body.appendChild(createDivEl);
 
   /* Used to create the point in which chat will live, body of the page */
   const createDiv1 = document.createElement('div');
   createDiv1.id = 'bcc_chatDIV';
   createDiv1.hidden = true;
-  document.body.appendChild(createDiv);
+  document.body.appendChild(createDiv1);
 
   /* Button used to intitiate the form, body of the page */
   const initialButton = document.createElement('button');
