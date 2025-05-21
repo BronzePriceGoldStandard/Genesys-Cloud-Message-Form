@@ -9,10 +9,12 @@ Need help or want to provide feedback? Email me <a href="mailto:FormChatHelp@Bro
 This is my first Github, hopefully you find it useful. Thank you for stopping by.
 <br>
 When setting this up, you only need to include a single line of code in all page headers where chat will be used. You can setup a logic to prevent visibility until you need it.
-
-Code:<br>
-<code><script src="Genesys-Cloud-Message-Form-main/createDIV1Form/js/setup.js" type="text/javascript"></script></code>
-
+<br><br>
+Instructions:<br>
+1. Download zip<br>
+2. unzip, maintain unzipped structure:<code>Genesys-Cloud-Message-Form-main/createDIV1Form/</code>. This should be stored in an accessible place for all pages utilizing it.<br>
+3. Add <code><script src="Genesys-Cloud-Message-Form-main/createDIV1Form/js/setup.js" type="text/javascript"></script></code> to each page you expect to use the web messaging
+<br><br>
 The design is to have a lower-right corner form that was originally on Chat V2. 
 Currently the demo asks for: First Name, Last Name, Email Address
 
