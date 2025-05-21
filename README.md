@@ -6,7 +6,7 @@ Sample View:
 When setting this up, you only need to include a single line of code in all page headers where chat will be used. You can setup a logic to prevent visibility until you need it.
 
 Code:<br>
-<code><script src="js/setup.js" type="text/javascript"></script></code>
+<code><script src="Genesys-Cloud-Message-Form-main/createDIV1Form/js/setup.js" type="text/javascript"></script></code>
 
 The design is to have a lower-right corner form that was originally on Chat V2. 
 Currently the demo asks for: First Name, Last Name, Email Address
