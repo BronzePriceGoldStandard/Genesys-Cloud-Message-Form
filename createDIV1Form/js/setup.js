@@ -1,4 +1,5 @@
   /* Used to create the point in which form will live, body of the page */
+document.addEventListener("DOMContentLoaded", function() {
   const createDivEl = document.createElement("div");
   createDivEl.id = 'bcc_formDIV';
   document.body.appendChild(createDivEl);
@@ -29,4 +30,4 @@
 
   /* It's own stylesheet  */
   document.head.appendChild(bcc_stylesheet.css);
-
+});
