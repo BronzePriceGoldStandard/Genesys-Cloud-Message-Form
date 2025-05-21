@@ -32,7 +32,7 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
        const runList = document.createElement('script');
        runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
        runList.defer = true; 
-       document.head.appendChild(runList);
+       document.getElementById('bcc_formDIV').appendChild(runList);
     })
     .catch(error => {
        console.error('Error loading file:', error);
