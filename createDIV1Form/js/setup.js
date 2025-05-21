@@ -20,14 +20,18 @@ document.addEventListener("DOMContentLoaded", function() {
     .then(response => response.text())
     .then(data => {
        document.getElementById('bcc_formDIV').innerHTML = data;
-       const runList1 = document.createElement('script');
-       runList1.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js';
-       runList1.defer = true; 
-       document.head.appendChild(runList1);
        const runList = document.createElement('script');
        runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
        runList.defer = true; 
        document.head.appendChild(runList);
+       const runList1 = document.createElement('script');
+       runList1.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js';
+       runList1.defer = true; 
+       document.head.appendChild(runList1);
+       const runList2 = document.createElement('script');
+       runList2.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/openChat.js';
+       runList2.defer = true; 
+       document.head.appendChild(runList2);
     })
     .catch(error => {
        console.error('Error loading file:', error);
