@@ -1,8 +1,3 @@
-<html>
-<head>
-  <meta name="viewport" content="height=device-height,width=device-width, initial-scale=1.0">
-</head>
-<body>
   <div id="bodyColor" hidden>
     <table id="headerTable">
       <tr>
@@ -23,6 +18,4 @@
 </form>
 <button id="cancel" class="cancelButton" type="submit">CANCEL</button>
 <br>
-</div>
-</body>
-</html>
+  </div>
