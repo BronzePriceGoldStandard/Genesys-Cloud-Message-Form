@@ -19,7 +19,9 @@ The design is to have a lower-right corner form that was originally on Chat V2.
 Currently the demo asks for: First Name, Last Name, Email Address
 
 Example:<br>
-<img width="312" alt="image" src="https://github.com/user-attachments/assets/736e8a23-23f2-4049-9975-268eec5ff881" />  <img width="312" alt="image" src="https://github.com/user-attachments/assets/5fc412c4-aa63-41fb-9d82-45d80908c86b" />
+
+
+<img width="110" alt="image" src="https://github.com/user-attachments/assets/186abd90-2550-4ce1-95f4-1bbcbcb14d48" />  <img width="280" alt="image" src="https://github.com/user-attachments/assets/736e8a23-23f2-4049-9975-268eec5ff881" />  <img width="312" alt="image" src="https://github.com/user-attachments/assets/5fc412c4-aa63-41fb-9d82-45d80908c86b" />
 
 <br>
 This is built on a web message deployment that is configured to pop with business logic.<br>
