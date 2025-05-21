@@ -24,12 +24,7 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
   initialButton.id = 'bcc_openChat';
   document.body.appendChild(initialButton);
 
-  const runList = document.createElement('script');
-  runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
-  runList.defer = true; 
-  document.head.appendChild(runList);
-  
-  /* Adding the form to the page */
+    /* Adding the form to the page */
   fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
@@ -38,6 +33,13 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
     .catch(error => {
        console.error('Error loading file:', error);
   });
+  
+  const runList = document.createElement('script');
+  runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
+  runList.defer = true; 
+  document.head.appendChild(runList);
+  
+
 
   /* It's own stylesheet  */
   const sSheet = document.createElement('stylesheet');
