@@ -1,20 +1,20 @@
   /* Used to create the point in which form will live, body of the page */
-  const createDiv = createElement('div');
+  const createDiv = document.createElement('div');
   createDiv.id('bcc_formDIV');
   document.body.appendChild(createDiv);
 
   /* Used to create the point in which chat will live, body of the page */
-  const createDiv1 = createElement('div');
+  const createDiv1 = document.createElement('div');
   createDiv1.id('bcc_chatDIV');
   createDiv1.hidden = true;
   document.body.appendChild(createDiv);
 
   /* Button used to intitiate the form, body of the page */
-  const initialButton = createElement('button');
+  const initialButton = document.createElement('button');
   initialButton.id = 'bcc_openChat';
   document.body.appendChild(initialButton);
 
-  const runList = createElement('javascript');
+  const runList = document.createElement('javascript');
   runList.src = "js/runListeners.js"
   document.getElementById('bcc_chatDIV').innerHTML = runlist;
   /* Adding the form to the page */
