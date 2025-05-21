@@ -1,11 +1,11 @@
   /* Used to create the point in which form will live, body of the page */
   const createDiv = document.createElement('div');
-  createDiv.id('bcc_formDIV');
+  createDiv.id = 'bcc_formDIV';
   document.body.appendChild(createDiv);
 
   /* Used to create the point in which chat will live, body of the page */
   const createDiv1 = document.createElement('div');
-  createDiv1.id('bcc_chatDIV');
+  createDiv1.id = 'bcc_chatDIV';
   createDiv1.hidden = true;
   document.body.appendChild(createDiv);
 
@@ -18,7 +18,7 @@
   runList.src = "js/runListeners.js"
   document.getElementById('bcc_chatDIV').innerHTML = runlist;
   /* Adding the form to the page */
-  fetch('php/chat.php')
+  fetch('Genesys-Cloud-Message-Form/creatDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
        document.getElementById('bcc_formDIV').innerHTML = data;
