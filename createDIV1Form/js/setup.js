@@ -31,5 +31,8 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   /* It's own stylesheet  */
-  document.head.appendChild('Genesys-Cloud-Message-Form-main/creatDIV1Form/bcc_stylesheet.css');
+  const sSheet = document.createElement('stylesheet');
+  sSheet.rel = 'stylesheet';
+  sSheet.href = 'Genesys-Cloud-Message-Form-main/creatDIV1Form/bcc_stylesheet.css';
+  document.head.appendChild(sSheet);
 });
