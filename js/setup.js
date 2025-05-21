@@ -14,6 +14,9 @@
   initialButton.id = 'bcc_openChat';
   document.body.appendChild(initialButton);
 
+  const runList = createElement('javascript');
+  runList.src = "js/runListeners.js"
+  document.getElementById('bcc_chatDIV').innerHTML = runlist;
   /* Adding the form to the page */
   fetch('php/chat.php')
     .then(response => response.text())
