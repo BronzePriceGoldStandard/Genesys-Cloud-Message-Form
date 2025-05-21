@@ -1,8 +1,3 @@
-/* Index related */
-#mainBody{
-background-color:white;
-}
-
 #bcc_openChat{
 border-radius:50%;
 width:56px;
@@ -18,8 +13,6 @@ background-image: url('img/downButton.png');
 background-size:cover;
 rotate:180deg;
 }
-
-/* App and Form related */
 #headerTable{
 padding-top:10px;
 padding-left:10px;
@@ -77,20 +70,10 @@ height: 50px;
 color:grey;
 font-size:auto;
 }
-#downloadTemp{
-border-radius:8px;
-background-color:blue;
-color:white;
-box-shadow:4px 4px 2px rgba(0,0,0,0.3);
-height:30px;
-}
 #cancel{
 border-radius:8px;
 background-color:black;
 color:white;
 box-shadow:4px 4px 2px rgba(0,0,0,0.3);
 height:30px;
-}
-#exitButton{
-background-color: rgba(0,0,0,0);
 }
