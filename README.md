@@ -19,6 +19,17 @@ Currently the demo asks for: First Name, Last Name, Email Address
 Example:<br>
 <img width="312" alt="image" src="https://github.com/user-attachments/assets/736e8a23-23f2-4049-9975-268eec5ff881" />  <img width="312" alt="image" src="https://github.com/user-attachments/assets/5fc412c4-aa63-41fb-9d82-45d80908c86b" />
 
+<br>
+This is built on a web message deployment that is configured to pop with business logic.<br>
+Also, you need to update the <b>Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js</b>
+<br>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/3a1e5d0f-329a-46cf-a31b-a89780f4ebbc" />
+<br>
+Requires:
+<br>
+envrionment (Example, 'prod')
+DeploymentKey
+
 
 <br>
 <b>Notes:</b> The logo should be stored in, and replace the current logo file. Use same name or you will need to modify the script:<br>
