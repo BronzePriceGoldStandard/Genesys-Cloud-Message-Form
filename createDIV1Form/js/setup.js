@@ -42,7 +42,7 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
 
 
   /* It's own stylesheet  */
-  const sSheet = document.createElement('stylesheet');
+  const sSheet = document.createElement('link');
   sSheet.rel = 'stylesheet';
   sSheet.href = 'Genesys-Cloud-Message-Form-main/creatDIV1Form/bcc_stylesheet.css';
   document.head.appendChild(sSheet);
