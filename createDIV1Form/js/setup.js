@@ -22,7 +22,7 @@ fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
   /* Button used to intitiate the form, body of the page */
   const initialButton = document.createElement('button');
   initialButton.id = 'bcc_openChat';
-  document.body.appendChild(initialButton);
+  document.getElementById('bcc_formDIV').appendChild(initialButton);
 
     /* Adding the form to the page */
   fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
