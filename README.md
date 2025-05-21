@@ -31,7 +31,7 @@ envrionment (Example, 'prod')
 DeploymentKey
 
 
-<br>
+<br><br><br>
 <b>Notes:</b> The logo should be stored in, and replace the current logo file. Use same name or you will need to modify the script:<br>
 <code>Genesys-Cloud-Message-Form/createDiv1Form/img/logo.png</code>
 <br><br><br>
