@@ -1,4 +1,4 @@
-  document.getElementById('openChat').addEventListener('click',function(event){
+  document.getElementById('bcc_openChat').addEventListener('click',function(event){
    event.preventDefault();
    document.getElementById('bodyColor').hidden = false;
    document.getElementById('chat').hidden = false;
