@@ -1,0 +1,96 @@
+/* Index related */
+#mainBody{
+background-color:white;
+}
+
+#openMain{
+border-radius:50%;
+width:56px;
+height:56px;
+right:20px;
+bottom:12px;
+margin-bottom:10px;
+text-align:center;
+position:fixed;
+background-color: rgba(0,0,0,0);
+font-size:12px;
+background-image: url('img/downButton.png');
+background-size:cover;
+rotate:180deg;
+}
+
+/* App and Form related */
+#headerTable{
+padding-top:10px;
+padding-left:10px;
+padding-bottom:20px;
+}
+#chatHeader{
+padding-top:10px;
+}
+#cLogo{
+width:100px;
+height:auto;
+}
+#formPoint{
+padding-bottom:20px;
+width:300px;
+height:auto;
+right:50px;
+border:0px solid;
+position:fixed;
+bottom:10px;
+}
+#bodyColor{
+background-color:#cde5e9;
+border-radius:5%;
+box-shadow:8px 8px 7px rgba(0,0,0,0.3);
+}
+#preChatForm{
+text-align:center;
+width:100%;
+height:100%;
+margin-bottom:-11px;
+}
+.inputFields{
+width:80%;
+height:auto;
+box-shadow:6px 6px 5px rgba(0,0,0,0.3);
+background-color:rgba(0,0,0,0.6);
+font-size:20px;
+border: 3px solid rgba(0,0,0,0.8);
+border-radius:7px;
+color:white;
+padding-left:15px;
+padding-top: 15px;
+font-family:Times,sans-serif;
+padding-bottom:8px;
+}
+.submitButton{
+font-family:Times,sans-serif;
+border: 2px solid rgba(2,4,7,0.8);
+background-color:#aaced3;
+box-shadow:10px 10px 3px rgba(0,0,0,0.3);
+border-radius: 10px;
+width: 100px;
+height: 50px;
+color:grey;
+font-size:auto;
+}
+#downloadTemp{
+border-radius:8px;
+background-color:blue;
+color:white;
+box-shadow:4px 4px 2px rgba(0,0,0,0.3);
+height:30px;
+}
+#cancel{
+border-radius:8px;
+background-color:black;
+color:white;
+box-shadow:4px 4px 2px rgba(0,0,0,0.3);
+height:30px;
+}
+#exitButton{
+background-color: rgba(0,0,0,0);
+}
