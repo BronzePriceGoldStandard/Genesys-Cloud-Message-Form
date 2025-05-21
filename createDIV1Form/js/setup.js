@@ -4,9 +4,9 @@
   document.body.appendChild(createDiv);
 
   /* Used to create the point in which chat will live, body of the page */
-  const createDiv = createElement('div');
-  createDiv.id('bcc_chatDIV');
-  createDiv.hidden = true;
+  const createDiv1 = createElement('div');
+  createDiv1.id('bcc_chatDIV');
+  createDiv1.hidden = true;
   document.body.appendChild(createDiv);
 
   /* Button used to intitiate the form, body of the page */
