@@ -1,7 +1,7 @@
   /* Used to create the point in which form will live, body of the page */
 document.addEventListener("DOMContentLoaded", function() {
   
-fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/list-files.php')
+fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/list-files.php')
   .then(response => response.json())
   .then(files => {
     files.forEach(file => {
@@ -25,12 +25,12 @@ fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/list-files.php')
   document.body.appendChild(initialButton);
 
   const runList = document.createElement('script');
-  runList.src = 'Genesys-Cloud-Message-Form-main/creatDIV1Form/js/runListeners.js';
+  runList.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/runListeners.js';
   runList.defer = true; 
   document.head.appendChild(runList);
   
   /* Adding the form to the page */
-  fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/chat.php')
+  fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
        bcc_formDIV.innerHTML = data;
