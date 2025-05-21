@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   document.body.appendChild(initialButton);
 
   const runList = document.createElement('script');
-  runList.src = './js/runListeners.js';
+  runList.src = 'Genesys-Cloud-Message-Form-main/creatDIV1Form/js/runListeners.js';
   runList.defer = true; 
   document.head.appendChild(runList);
   
