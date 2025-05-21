@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const initialButton = document.createElement('button');
   initialButton.id = 'bcc_openChat';
   document.body.appendChild(initialButton);
-
+  
     /* Adding the form to the page */
   fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
     .then(response => response.text())
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
     .catch(error => {
        console.error('Error loading file:', error);
   });
-
+  
   /* It's own stylesheet  */
   const sSheet = document.createElement('link');
   sSheet.rel = 'stylesheet';
