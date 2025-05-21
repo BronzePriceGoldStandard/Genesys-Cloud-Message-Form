@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
   fetch('Genesys-Cloud-Message-Form-main/createDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
-       document.getElementById('bcc_chatDIV').innerHTML = data;
+       document.getElementById('bcc_formDIV').innerHTML = data;
        const runList1 = document.createElement('script');
        runList1.src = 'Genesys-Cloud-Message-Form-main/createDIV1Form/js/genesys.js';
        runList1.defer = true; 
