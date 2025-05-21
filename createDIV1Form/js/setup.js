@@ -1,5 +1,14 @@
   /* Used to create the point in which form will live, body of the page */
 document.addEventListener("DOMContentLoaded", function() {
+  
+fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/list-files.php')
+  .then(response => response.json())
+  .then(files => {
+    files.forEach(file => {
+      console.log('Found file:', file);
+    });
+  });
+
   const createDivEl = document.createElement("div");
   createDivEl.id = 'bcc_formDIV';
   document.body.appendChild(createDivEl);
