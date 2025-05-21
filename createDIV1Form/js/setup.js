@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const runList = document.createElement('script');
   runList.src = 'Genesys-Cloud-Message-Form/creatDIV1Form/js/runListeners.js';
   runList.defer = true; 
-  document.head.appendChild('runList');
+  document.head.appendChild(runList);
+  
   /* Adding the form to the page */
   fetch('Genesys-Cloud-Message-Form/creatDIV1Form/php/chat.php')
     .then(response => response.text())
@@ -30,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   /* It's own stylesheet  */
-  document.head.appendChild(bcc_stylesheet.css);
+  document.head.appendChild('Genesys-Cloud-Message-Form/creatDIV1Form/bcc_stylesheet.css');
 });
