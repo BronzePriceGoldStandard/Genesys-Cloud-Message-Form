@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", function() {
   document.body.appendChild(initialButton);
 
   const runList = document.createElement('script');
-  runList.src = 'Genesys-Cloud-Message-Form/creatDIV1Form/js/runListeners.js';
+  runList.src = 'Genesys-Cloud-Message-Form-main/creatDIV1Form/js/runListeners.js';
   runList.defer = true; 
   document.head.appendChild(runList);
   
   /* Adding the form to the page */
-  fetch('Genesys-Cloud-Message-Form/creatDIV1Form/php/chat.php')
+  fetch('Genesys-Cloud-Message-Form-main/creatDIV1Form/php/chat.php')
     .then(response => response.text())
     .then(data => {
        document.getElementById('bcc_formDIV').innerHTML = data;
@@ -31,5 +31,5 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   /* It's own stylesheet  */
-  document.head.appendChild('Genesys-Cloud-Message-Form/creatDIV1Form/bcc_stylesheet.css');
+  document.head.appendChild('Genesys-Cloud-Message-Form-main/creatDIV1Form/bcc_stylesheet.css');
 });
