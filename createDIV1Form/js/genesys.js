@@ -1,4 +1,5 @@
-console.log("Created by Bronze Cooley, please contact for information: siteDemo@bronzecooley.com");
+console.log("https://github.com/createDiv1/Genesys-Cloud-Message-Form/tree/main");
+console.log("https://github.com/createDiv1/Genesys-Cloud-Message-Form/tree/main");
 
 document.getElementById("bcc_preChatForm").addEventListener("submit", function(e) {
   e.preventDefault();
