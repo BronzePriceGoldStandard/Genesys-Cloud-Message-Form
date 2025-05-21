@@ -1,6 +1,6 @@
- console.log("Created by Bronze Cooley, please contact for information: siteDemo@bronzecooley.com");
+console.log("Created by Bronze Cooley, please contact for information: siteDemo@bronzecooley.com");
 
-document.getElementById("preChatForm").addEventListener("submit", function(e) {
+document.getElementById("bcc_preChatForm").addEventListener("submit", function(e) {
   e.preventDefault();
   (function (g, e, n, es, ys) {
     g['_genesysJs'] = e;
@@ -18,8 +18,8 @@ Genesys('subscribe','Database.Ready',function(){
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
-  document.getElementById("preChatForm").hidden = true;
-  document.getElementById('formPoint').hidden = true;
+  document.getElementById("bcc_preChatForm").hidden = true;
+  document.getElementById('bcc_formDIV').hidden = true;
   console.log("Complete");
   Genesys('subscribe',"Messenger.Ready",function(){
    console.log("Database is ready!");
