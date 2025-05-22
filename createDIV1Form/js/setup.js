@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /* Button used to intitiate the form, body of the page */
   const initialButton = document.createElement('button');
-  initialButton.id = 'bcc_openChat';
+  initialButton.id = 'chat-button';
   document.body.appendChild(initialButton);
   
     /* Adding the form to the page */
