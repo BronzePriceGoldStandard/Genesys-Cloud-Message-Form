@@ -31,7 +31,7 @@ Also, you need to update the <b>Genesys-Cloud-Message-Form-main/createDIV1Form/j
 <br>
 Requires:
 <br>
-envrionment (Example, 'prod')
+environment (Example, 'prod')<br>
 DeploymentKey
 
 
