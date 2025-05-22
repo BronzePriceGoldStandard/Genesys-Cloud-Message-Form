@@ -16,8 +16,7 @@ document.getElementById("bcc_preChatForm").addEventListener("submit", function(e
     deploymentId: '[REDACTED]'
   });
 Genesys('subscribe','Database.Ready',function(){
-  Genesys('command','Database.Remove', {name: "messaging.customAttributes"},function(data){},function(){}});
-  
+  Genesys('command','Database.Remove', {name: "messaging.customAttributes"},function(data){},function(){});
   const firstName = document.getElementById("firstName").value;
   const lastName = document.getElementById("lastName").value;
   const email = document.getElementById("email").value;
