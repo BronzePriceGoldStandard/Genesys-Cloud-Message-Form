@@ -7,7 +7,7 @@ bottom:12px;
 margin-bottom:10px;
 text-align:center;
 position:fixed;
-background-color: rgba(0,0,0,0);
+background-color: rgba(0,0,0,1);
 font-size:12px;
 background-image: url('img/downButton.png');
 background-size:cover;
@@ -35,7 +35,7 @@ position:fixed;
 bottom:10px;
 }
 #bodyColor{
-background-color:#cde5e9;
+background-color:#ffffff;
 border-radius:5%;
 box-shadow:8px 8px 7px rgba(0,0,0,0.3);
 }
@@ -72,8 +72,18 @@ font-size:auto;
 }
 #cancel{
 border-radius:8px;
-background-color:black;
+background-color:red;
 color:white;
 box-shadow:4px 4px 2px rgba(0,0,0,0.3);
 height:30px;
+width:30px;
+right:60px;
+bottom:380px;
+position:fixed;
+}
+#shamelessPlug{
+position:fixed;
+right:75px;
+margin:auto;
+color:grey;
 }
