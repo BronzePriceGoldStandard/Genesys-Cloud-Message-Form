@@ -37,7 +37,8 @@ bottom:10px;
 #bodyColor{
 background-color:#ffffff;
 border-radius:5%;
-box-shadow:8px 8px 7px rgba(0,0,0,0.3);
+box-shadow:8px 8px 24px rgba(0,0,0,0.3);
+border: 1px solid rgba(0,0,0,0.3);
 }
 #bcc_preChatForm{
 text-align:center;
@@ -62,12 +63,12 @@ padding-bottom:8px;
 .submitButton{
 font-family:Times,sans-serif;
 border: 2px solid rgba(2,4,7,0.8);
-background-color:#aaced3;
+background-color:black;
 box-shadow:10px 10px 3px rgba(0,0,0,0.3);
 border-radius: 10px;
 width: 100px;
 height: 50px;
-color:grey;
+color:white;
 font-size:auto;
 }
 #cancel{
