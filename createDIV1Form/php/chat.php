@@ -16,6 +16,6 @@
   <br><br>
   <button class="submitButton" type="submit">STAR CHAT</button><br><br>
 </form>
-<button id="cancel" class="cancelButton" type="submit">CANCEL</button>
+<button id="cancel" class="cancelButton" type="submit">X</button>
 <br>
   </div>
