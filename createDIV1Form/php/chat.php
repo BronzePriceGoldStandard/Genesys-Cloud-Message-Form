@@ -17,5 +17,6 @@
   <button class="submitButton" type="submit">STAR CHAT</button><br><br>
 </form>
 <button id="cancel" class="cancelButton" type="submit">X</button>
+<br><a id="shamelessPlug" href="https://github.com/createDiv1/Genesys-Cloud-Message-Form" target="_blank">Github</a>
 <br>
   </div>
