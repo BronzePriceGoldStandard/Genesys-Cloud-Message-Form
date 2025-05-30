@@ -24,16 +24,18 @@ Genesys('subscribe','Database.Ready',function(){
   document.getElementById('bcc_formDIV').hidden = true;
   console.log("Complete");
   Genesys('subscribe',"Messenger.Ready",function(){
-   console.log("Database is ready!");
-   Genesys("command", "Database.set", {
-    messaging: {
-      customAttributes: {
-        firstName,
-        lastName,
-        email
-      }
-    }
-  });
+   console.log("Messenger is ready!");
+   Genesys('subscribe', "Database.Ready",function(){
+     console.log("Database is ready!");
+     Genesys("command", "Database.set", {
+       messaging: {
+         customAttributes: {
+           firstName,
+           lastName,
+           email
+        }
+      }
+  });});
   Genesys("command", "Journey.setCustomerData", {
     email,
     firstName,
